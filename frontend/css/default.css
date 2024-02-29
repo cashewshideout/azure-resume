@@ -147,7 +147,7 @@ body {
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
-	color: #838C95;
+	color: #1a1a1a;
 
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
@@ -280,7 +280,7 @@ abbr:hover { cursor: help; }
 	color: inherit;
 }
 
-hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }
+hr { border: solid #868686; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }
 
 
 /*  3. Links  ------------------------------------------------------- */
@@ -288,14 +288,14 @@ hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 3
 a, a:visited {
    text-decoration: none;
    outline: 0;
-   color: #11ABB0;
+   color: #E4FDE1;
 
    -webkit-transition: color .3s ease-in-out;
    -moz-transition: color .3s ease-in-out;
    -o-transition: color .3s ease-in-out;
    transition: color .3s ease-in-out;
 }
-a:hover, a:focus { color: #313131; }
+a:hover, a:focus { color: #558564; }
 p a, p a:visited { line-height: inherit; }
 
 
