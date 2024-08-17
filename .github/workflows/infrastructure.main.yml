@@ -1,15 +1,15 @@
 name: Infrastructure
-
 on:
   push:
     branches:
       - main
+    paths:
+      - 'infrastructure/**'
   pull_request:
     branches:
       - main
-  paths:
-    - 'infrastructure/**'
-
+    paths:
+      - 'infrastructure/**'
 jobs:
   deploy:
     runs-on: ubuntu-latest
