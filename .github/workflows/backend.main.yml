@@ -1,0 +1,19 @@
+name: Backend
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'backend/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'backend/**'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      LOCATION: eastus
+    steps:
+      - uses: actions/checkout@v2
