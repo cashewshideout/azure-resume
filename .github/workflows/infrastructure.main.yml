@@ -1,4 +1,5 @@
 name: Infrastructure
+
 on:
   push:
     branches:
@@ -12,7 +13,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    needs: build
     env:
       LOCATION: eastus
     steps:
@@ -31,6 +31,6 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-              az group create --location ${{ env.LOCATION }} --name ${{ vars.RESOURCE_GROUP_NAME }}
+              az group create --location ${{ env.LOCATION }} --name ${{ env.RESOURCE_GROUP_NAME }}
       # - name: Deploy
       #   run: az deployment sub create --location eastus --template-file infrastructure/main.bicep --name infrastructureDeployment --name ${{ vars.RESOURCE_GROUP_NAME }}
