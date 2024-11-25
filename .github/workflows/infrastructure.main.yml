@@ -23,7 +23,7 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-            az bicep build infrastructure/main.bicep
+            az bicep build --file infrastructure/main.bicep
       - uses: Azure/login@v1
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
