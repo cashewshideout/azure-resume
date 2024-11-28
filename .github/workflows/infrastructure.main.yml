@@ -45,5 +45,5 @@ jobs:
         with:
           inlineScript: |
             az deployment group what-if --resource-group ${{ secrets.RESOURCE_GROUP_NAME }} --template-file infrastructure/main.bicep --parameters infrastructure/parameters.bicepparam `
-            -- parameters appserviceplanname='${{ secrets.APPSERVICEPLANNAME }}' appname='${{ secrets.APPNAME }}' cosmosdbname='${{ secrets.COSMOSDBNAME }}' `
-            -- parameters cosmosdatabasename='${{ secrets.COSMOSDATABASENAME }}' storageaccountname='${{ secrets.STORAGEACCOUNTNAME }}'
+            --parameters appserviceplanname='${{ secrets.APPSERVICEPLANNAME }}' appname='${{ secrets.APPNAME }}' cosmosdbname='${{ secrets.COSMOSDBNAME }}' `
+            --parameters cosmosdatabasename='${{ secrets.COSMOSDATABASENAME }}' storageaccountname='${{ secrets.STORAGEACCOUNTNAME }}'
