@@ -4,7 +4,7 @@ param appname string
 param cosmosdbname string
 param cosmosdatabasename string
 param storageaccountname string
-param appserviceplansku string
+param appserviceplansku string = 'Y1'
 
 //log analytics
 //application insights
