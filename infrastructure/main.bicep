@@ -10,7 +10,7 @@ param appserviceplansku string = 'Y1'
 //application insights
 
 module cosmosaccount 'resources/cosmosdb.bicep' = {
-  name: 'cosmosdb'
+  name: cosmosdbname
   params: {
     location: location
     cosmosaccountname: cosmosdbname
@@ -19,7 +19,7 @@ module cosmosaccount 'resources/cosmosdb.bicep' = {
 }
 
 module storageaccount 'resources/storageaccount.bicep' = {
-  name: 'storageaccount'
+  name: storageaccountname
   params: {
     storagename: storageaccountname
     location: location
@@ -27,7 +27,7 @@ module storageaccount 'resources/storageaccount.bicep' = {
 }
 
 module appserviceplan 'resources/appserviceplan.bicep' = {
-  name: 'appserviceplan'
+  name: appserviceplanname
   params: {
     location: location
     skuName: appserviceplansku
@@ -36,7 +36,7 @@ module appserviceplan 'resources/appserviceplan.bicep' = {
 }
 
 module functionapp 'resources/functionapp.bicep' = {
-  name: 'functionapp'
+  name: appname
   params: {
     location: location
     appName: appname
