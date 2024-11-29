@@ -3,7 +3,7 @@ param location string
 param skuName string = 'Y1'
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2021-02-01' = {
-    name: '${appServicePlanName}-plan'
+    name: appServicePlanName
     location: location
     sku: {
         name: skuName
