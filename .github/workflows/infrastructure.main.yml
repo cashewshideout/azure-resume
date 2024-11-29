@@ -44,6 +44,6 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-            az deployment group what-if --resource-group ${{ secrets.RESOURCE_GROUP_NAME }} --template-file infrastructure/main.bicep `
-              --parameters appserviceplanname='${{ secrets.APPSERVICEPLANNAME }}' appname='${{ secrets.APPNAME }}' cosmosdbname='${{ secrets.COSMOSDBNAME }}' `
+            az deployment group what-if --resource-group ${{ secrets.RESOURCE_GROUP_NAME }} --template-file infrastructure/main.bicep \
+              --parameters appserviceplanname='${{ secrets.APPSERVICEPLANNAME }}' appname='${{ secrets.APPNAME }}' cosmosdbname='${{ secrets.COSMOSDBNAME }}' \
               --parameters cosmosdatabasename='${{ secrets.COSMOSDATABASENAME }}' storageaccountname='${{ secrets.STORAGEACCOUNTNAME }}'
